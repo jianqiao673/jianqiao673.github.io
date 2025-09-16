@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算机科学与技术学院2024年院队纳新情况</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <style type="text/css">
+        body{
+            background: url("bgd.jpg") no-repeat center center fixed;
+                    /*兼容浏览器版本*/
+                    -webkit-background-size: cover;
+                    -o-background-size: cover;                
+                    background-size: cover;
+        }
+    </style>
+
+    <div class="search-container">
+        <h1>计算机足球队2024年院队纳新</h1>
+        <form id="stringForm" onsubmit="return handleSubmit(event)">
+            <input type="text" id="searchQuery" placeholder="请输入学号...">
+            <button onclick="performSearch()">Search</button>
+            <div class="results" id="results"></div>
+        </form>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // 防止表单的默认提交行为
+
+            // const originalString = '202200130022'; // 预设字符串
+            const userInput = document.getElementById('searchQuery').value;
+
+            // 创建结果页面的 URL，带上输入的字符串作为查询参数
+            const resultPageUrl = `result.html?input=${encodeURIComponent(userInput)}`;
+            window.location.href = resultPageUrl; // 跳转到结果页面
+        }
+    </script>
+
+</body>
+</html>
+<!-- &original=${encodeURIComponent(originalString)} -->
