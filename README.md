@@ -125,16 +125,6 @@ If the file appears, the compilation was successful ✅
 
 ---
 
-## 🧩 10. Example Directory Layout
-
-```
-project_root/
-├── attention.cl
-├── attention.hsaco
-└── README.md
-```
-
----
 
 ## 📚 References
 
@@ -145,6 +135,6 @@ project_root/
 ---
 
 **Author:**  
-Shandong University — GPU Computing Optimization Team  
+Shandong University — GPU Memory Optimization Team  
 **Purpose:**  
 To provide a reproducible environment for compiling `.cl` → `.hsaco` under ROCm 3.8.
